@@ -1,5 +1,5 @@
 Assembler report for Lab1Demo
-Mon Nov 29 14:37:04 2021
+Tue Nov 30 16:40:18 2021
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Nov 29 14:37:04 2021 ;
+; Assembler Status      ; Successful - Tue Nov 30 16:40:18 2021 ;
 ; Revision Name         ; Lab1Demo                              ;
 ; Top-level Entity Name ; TOP_VGA_DEMO_KBD                      ;
 ; Family                ; Cyclone V                             ;
@@ -78,8 +78,8 @@ agreement for further details.
 +----------------+---------------------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                                       ;
 +----------------+---------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x063E1A10                                                                                                    ;
-; Checksum       ; 0x063E1A10                                                                                                    ;
+; JTAG usercode  ; 0x06DF5585                                                                                                    ;
+; Checksum       ; 0x06DF5585                                                                                                    ;
 +----------------+---------------------------------------------------------------------------------------------------------------+
 
 
@@ -89,13 +89,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Nov 29 14:36:52 2021
+    Info: Processing started: Tue Nov 30 16:40:08 2021
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Lab1Demo -c Lab1Demo
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4898 megabytes
-    Info: Processing ended: Mon Nov 29 14:37:04 2021
-    Info: Elapsed time: 00:00:12
+    Info: Peak virtual memory: 4903 megabytes
+    Info: Processing ended: Tue Nov 30 16:40:18 2021
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:10
 
 

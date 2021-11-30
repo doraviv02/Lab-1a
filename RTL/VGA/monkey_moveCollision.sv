@@ -24,8 +24,8 @@ module	monkey_moveCollision	(
 
 // a module used to generate the  ball trajectory.  
 
-parameter int INITIAL_X = 280;
-parameter int INITIAL_Y = 185;
+parameter int INITIAL_X = 0;
+parameter int INITIAL_Y = 0;
 parameter int INITIAL_X_SPEED = 40;
 parameter int INITIAL_JUMP_SPEED = -200;
 parameter int MAX_Y_SPEED = 230;
