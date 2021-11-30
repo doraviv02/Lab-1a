@@ -1088,6 +1088,67 @@ agreement for further details.
 	)
 	(annotation_block (parameter)(rect 592 40 792 136))
 )
+(symbol
+	(rect -232 848 16 976)
+	(text "ROPE_DISPLAY" (rect 5 0 98 19)(font "Intel Clear" (font_size 8)))
+	(text "inst8" (rect 8 107 30 124)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "clk" (rect 21 27 37 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "resetN" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 75 19)(font "Intel Clear" (font_size 8)))
+		(text "pixelX[10..0]" (rect 21 59 96 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 75 19)(font "Intel Clear" (font_size 8)))
+		(text "pixelY[10..0]" (rect 21 75 96 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 248 32)
+		(output)
+		(text "HartDrawingRequest" (rect 0 0 122 19)(font "Intel Clear" (font_size 8)))
+		(text "HartDrawingRequest" (rect 105 27 227 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 248 32)(pt 232 32))
+	)
+	(port
+		(pt 248 48)
+		(output)
+		(text "hartRGB[7..0]" (rect 0 0 80 19)(font "Intel Clear" (font_size 8)))
+		(text "hartRGB[7..0]" (rect 147 43 227 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 248 48)(pt 232 48)(line_width 3))
+	)
+	(parameter
+		"hart_topleftx"
+		"20"
+		""
+		(type "PARAMETER_UNSIGNED_HEX")	)
+	(parameter
+		"hart_toplefty"
+		"20"
+		""
+		(type "PARAMETER_UNSIGNED_HEX")	)
+	(drawing
+		(rectangle (rect 16 16 232 112))
+	)
+	(annotation_block (parameter)(rect 16 784 191 841))
+)
 (connector
 	(pt 64 104)
 	(pt 24 104)
@@ -1292,17 +1353,6 @@ agreement for further details.
 	(text "pixelY[10..0]" (rect -302 744 -243 761)(font "Intel Clear" ))
 	(pt -440 760)
 	(pt -240 760)
-	(bus)
-)
-(connector
-	(text "HartDrawingRequest" (rect 34 696 131 713)(font "Intel Clear" ))
-	(pt 24 712)
-	(pt 144 712)
-)
-(connector
-	(text "hartRGB[7..0]" (rect 34 712 97 729)(font "Intel Clear" ))
-	(pt 24 728)
-	(pt 144 728)
 	(bus)
 )
 (connector
@@ -1585,6 +1635,39 @@ agreement for further details.
 	(text "smileyDR" (rect 842 168 888 185)(font "Intel Clear" ))
 	(pt 816 184)
 	(pt 904 184)
+)
+(connector
+	(text "resetN" (rect -286 880 -256 897)(font "Intel Clear" ))
+	(pt -432 896)
+	(pt -232 896)
+)
+(connector
+	(text "pixelX[10..0]" (rect -294 896 -235 913)(font "Intel Clear" ))
+	(pt -432 912)
+	(pt -232 912)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect -294 912 -235 929)(font "Intel Clear" ))
+	(pt -432 928)
+	(pt -232 928)
+	(bus)
+)
+(connector
+	(text "clk" (rect -280 864 -266 881)(font "Intel Clear" ))
+	(pt -432 880)
+	(pt -232 880)
+)
+(connector
+	(text "HartDrawingRequest" (rect 26 864 123 881)(font "Intel Clear" ))
+	(pt 16 880)
+	(pt 136 880)
+)
+(connector
+	(text "hartRGB[7..0]" (rect 26 880 89 897)(font "Intel Clear" ))
+	(pt 16 896)
+	(pt 136 896)
+	(bus)
 )
 (junction (pt 552 944))
 (text "Sound Unit" (rect 496 784 562 803)(font "Intel Clear" (font_size 8)))
