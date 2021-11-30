@@ -13,8 +13,11 @@ module	monkey_moveCollision	(
 					input logic digitIsPressed,
 					input logic [3:0] digit,
 					
-					input logic collision,  //collision if monkey hits an object
+					input logic wallCollision,  //collision if monkey hits a wall					
+					input logic ladderCollision, //collision with ladder, which behaves a different way
+					
 					input	logic	[3:0] HitEdgeCode, //one bit per edge 
+
 
 					output    logic signed 	[10:0]	topLeftX, // output the top left corner 
 					output	 logic signed	[10:0]	topLeftY  // can be negative , if the object is partliy outside 
@@ -27,7 +30,7 @@ module	monkey_moveCollision	(
 parameter int INITIAL_X = 280;
 parameter int INITIAL_Y = 185;
 parameter int INITIAL_X_SPEED = 40;
-parameter int INITIAL_JUMP_SPEED = -200;
+parameter int INITIAL_JUMP_SPEED = -300;
 parameter int MAX_Y_SPEED = 230;
 const int  Y_ACCEL = 5;
 
@@ -43,7 +46,8 @@ const int   OBJECT_WIDTH_X = 64;
 int Xspeed, topLeftX_FixedPoint; // local parameters 
 int Yspeed, topLeftY_FixedPoint;
 
-logic flag;
+logic xflag;
+logic yflag;
 logic jumpFlag=1'b0;
 
 // Moving left or right
@@ -54,17 +58,17 @@ begin
 	else begin
 		//collision executes once a frame
 		//we have to counteract it in order to be able to change monkey's speed to stay off walls.
-		if (startOfFrame) flag=1'b0;
+		if (startOfFrame) xflag=1'b0;
 	
-		if (collision && (HitEdgeCode[3]||HitEdgeCode[1]) && !(HitEdgeCode[2]||HitEdgeCode[0])) begin
-			flag=1'b1;
+		if (wallCollision && (HitEdgeCode[3]||HitEdgeCode[1]) && !(HitEdgeCode[2]||HitEdgeCode[0])) begin
+			xflag=1'b1;
 			if (HitEdgeCode[3]==1)//collision left wall
 					Xspeed <= INITIAL_X_SPEED;
 				else if (HitEdgeCode[1]==1) //collision right wall
 					Xspeed <= INITIAL_X_SPEED*-1;
 		end
 	
-		else if (flag==1'b0) begin
+		else if (xflag==1'b0) begin
 			if (digitIsPressed) begin
 				if(digit==4) //pressing right
 					Xspeed <= INITIAL_X_SPEED*-1;
@@ -83,22 +87,29 @@ begin
 	if (!resetN) begin
 	end
 	else begin
-		if(collision && HitEdgeCode[2]==1 && (HitEdgeCode[3]==0 && HitEdgeCode[1]==0))
+		
+		if (ladderCollision || !yflag) begin
+			yflag <= 1;
+			Yspeed <= 0;
+			jumpFlag <= 0;
+		end
+		else if(wallCollision && HitEdgeCode[2]==1 && (HitEdgeCode[3]==0 && HitEdgeCode[1]==0))
 			Yspeed <= 10; //Hit top edge, -10 speed is just so the monkey can start falling
 		
 		else begin
 			if(jumpIsPressed && jumpFlag!=1) begin
-				jumpFlag=1'b1;
+				jumpFlag <= 1'b1;
 				Yspeed <= INITIAL_JUMP_SPEED; //Pressed the jump key
 			end
 			
-			else if (collision && HitEdgeCode[0]==1 && !(HitEdgeCode[3]||HitEdgeCode[1])) begin
-				Yspeed <= -30; //Hit bottom edge and didn't press jump, stay at same place.
-				jumpFlag=1'b0;
+			else if (wallCollision && HitEdgeCode[0]==1 && !(HitEdgeCode[3]||HitEdgeCode[1])) begin
+				Yspeed <= -20; //Hit bottom edge and didn't press jump, stay at same place.
+				jumpFlag <= 1'b0;
 			end
 		end
 		
 		if (startOfFrame == 1'b1) begin
+			yflag <= 0;
 			if (Yspeed < MAX_Y_SPEED ) //  limit the spped while going down 
 				Yspeed <= Yspeed + Y_ACCEL ; // deAccelerate : slow the speed down every clock tic
 		end

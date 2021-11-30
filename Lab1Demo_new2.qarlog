@@ -1,0 +1,100 @@
+Quartus Prime Archive log --	C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/Lab1Demo_new2.qarlog
+
+Archive:	C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/Lab1Demo_new2.qar
+Date:		Tue Nov 30 17:26:59 2021
+Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/DE10_Standard_Audio.sdc
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/Lab1Demo.qpf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/Lab1Demo.qsf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/Number_position.bsf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/Number_position.qip
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/Number_position.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/Number_position_bb.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/AUDIO/AUDIO.bdf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/AUDIO/SinTable.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/AUDIO/TOP_AUDIO.bdf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/AUDIO/ToneDecoder.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/AUDIO/addr_counter.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/AUDIO/prescaler.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/KEYBOARD/HexSS.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/KEYBOARD/KBDINTF.bdf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/KEYBOARD/KEYBOARD_INTERFACE.bdf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/KEYBOARD/bitrec.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/KEYBOARD/byterec.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/KEYBOARD/keyPad_decoder.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/KEYBOARD/keyToggle_decoder.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/KEYBOARD/lpf.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/KEYBOARD/random.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/KEYBOARD/simple_up_counter.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/Seg7/SEG7.SV
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/Fruit.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/FruitBitMap.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/Fruit_Display.bdf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/HART_DISPLAY.bdf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/HartsMatrixBitMap.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/NumbersBitMap.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/ROPE_DISPLAY.bdf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/Rope.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/RopesMatrixBitMap.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/Smiley_Block.bdf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/VGA_Controller.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/back_ground_draw.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/back_ground_drawSquare.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/game_controller.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/monkey_moveCollision.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/objects_mux.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/smileyBitMap.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/smileyBitMapX2.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/smileyface_moveCollision.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/square_Hart_object.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/square_object.sv
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/valX.bsf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/valX.qip
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/valX.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/valX_bb.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/VGA/valX_inst.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/audio_codec_controller/audio_codec_controller.qxp
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/numberPosition.bsf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/numberPosition.qip
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/numberPosition.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/RTL/numberPosition_bb.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/X_loca.bsf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/X_loca.qip
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/X_loca.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/X_loca_bb.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/X_location.bsf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/X_location.qip
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/X_location.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/X_location_bb.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/Y_location.bsf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/Y_location.qip
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/Y_location.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/Y_location_bb.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/assignment_defaults.qdf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/audio_codec_controller.qxp
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/clock_divider.cmp
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/clock_divider.qip
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/clock_divider.sip
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/clock_divider.spd
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/clock_divider.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/clock_divider/clock_divider_0002.qip
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/clock_divider/clock_divider_0002.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/clock_divider_sim/clock_divider.vo
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/constraints/DE10_Standard_Audio.sdc
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/constraints/pin.tcl
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/db/stp_monkey1_auto_stripped.stp
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/matrix_top_XY.bsf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/matrix_top_XY.qip
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/matrix_top_XY.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/matrix_top_XY_bb.v
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/output_files/Chain1.cdf
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/output_files/stp_collision.stp
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/output_files/stp_monkey1.stp
+C:/Users/Dor Aviv/Desktop/Fixed/Lab-1a/output_files/stp_random.stp
+	======= Total: 89 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

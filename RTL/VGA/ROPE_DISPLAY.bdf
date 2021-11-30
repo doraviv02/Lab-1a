@@ -235,7 +235,7 @@ agreement for further details.
 	(annotation_block (parameter)(rect 752 216 1007 292))
 )
 (symbol
-	(rect 424 432 536 480)
+	(rect 456 432 568 480)
 	(text "matrix_top_XY" (rect 15 0 114 16)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 32 25 44)(font "Arial" ))
 	(port
@@ -388,13 +388,23 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 552 424)
+	(text "clk" (rect 634 344 648 361)(font "Intel Clear" ))
+	(pt 776 360)
+	(pt 624 360)
+)
+(connector
 	(pt 776 424)
+	(pt 584 424)
 	(bus)
 )
 (connector
-	(pt 552 424)
-	(pt 552 456)
+	(pt 584 456)
+	(pt 568 456)
+	(bus)
+)
+(connector
+	(pt 584 424)
+	(pt 584 440)
 	(bus)
 )
 (connector
@@ -402,20 +412,5 @@ agreement for further details.
 	(pt 584 456)
 	(bus)
 )
-(connector
-	(pt 536 456)
-	(pt 552 456)
-	(bus)
-)
-(connector
-	(pt 552 456)
-	(pt 584 456)
-	(bus)
-)
-(connector
-	(text "clk" (rect 634 344 648 361)(font "Intel Clear" ))
-	(pt 776 360)
-	(pt 624 360)
-)
-(junction (pt 552 456))
+(junction (pt 584 440))
 (rectangle (rect 440 184 1824 552)(color 0 0 0)(line_width 3))

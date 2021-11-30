@@ -443,7 +443,11 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=251" -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/FruitBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/RopesMatrixBitMap.sv
+set_global_assignment -name BDF_FILE RTL/VGA/ROPE_DISPLAY.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/Rope.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/Fruit.sv
 set_global_assignment -name BDF_FILE RTL/VGA/TOP_VGA_DEMO_KBD.bdf
 set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/smileyface_moveCollision.sv
 set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/game_controller.sv
@@ -496,4 +500,6 @@ set_global_assignment -name SIGNALTAP_FILE output_files/stp_random.stp
 set_global_assignment -name SIGNALTAP_FILE output_files/stp_collision.stp
 set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/monkey_moveCollision.sv
 set_global_assignment -name SIGNALTAP_FILE output_files/stp_monkey1.stp
+set_global_assignment -name BDF_FILE RTL/VGA/Fruit_Display.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/stp_monkey1_auto_stripped.stp
