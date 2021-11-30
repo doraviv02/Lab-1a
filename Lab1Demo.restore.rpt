@@ -1,5 +1,5 @@
 Restore Archived Project report for Lab1Demo
-Mon Nov 29 11:28:56 2021
+Tue Nov 30 10:55:27 2021
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Mon Nov 29 11:28:56 2021 ;
+; Restore Archived Project Status ; Successful - Tue Nov 30 10:55:27 2021 ;
 ; Revision Name                   ; Lab1Demo                              ;
 ; Top-level Entity Name           ; TOP_VGA_DEMO_KBD                      ;
 ; Family                          ; Cyclone V                             ;
@@ -47,13 +47,13 @@ agreement for further details.
 +-----------------------------------+
 ; Restore Archived Project Messages ;
 +-----------------------------------+
-Info: Successfully restored 'C:/Users/amit5/AppData/Local/Temp/25_11_2021_VGA_Siftah.qar' into the 'C:\\Users\\amit5\\OneDrive\\Documents\\Lab 1a in Electrical Engineering\\PROJECT/' directory
+Info: Successfully restored 'C:/Users/Dor Aviv/Desktop/Project_29_11.qar' into the 'C:\\Users\\Dor Aviv\\Desktop\\Project/' directory
 Info: Generated report 'Lab1Demo.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Mon Nov 29 11:28:56 2021
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4817 megabytes
+    Info: Processing ended: Tue Nov 30 10:55:27 2021
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
@@ -96,6 +96,7 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/back_ground_draw.sv                           ;
 ; RTL/VGA/back_ground_drawSquare.sv                     ;
 ; RTL/VGA/game_controller.sv                            ;
+; RTL/VGA/monkey_moveCollision.sv                       ;
 ; RTL/VGA/objects_mux.sv                                ;
 ; RTL/VGA/smileyBitMap.sv                               ;
 ; RTL/VGA/smileyBitMapX2.sv                             ;
@@ -136,13 +137,14 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; clock_divider_sim/clock_divider.vo                    ;
 ; constraints/DE10_Standard_Audio.sdc                   ;
 ; constraints/pin.tcl                                   ;
-; db/stp_collision_auto_stripped.stp                    ;
+; db/stp_monkey1_auto_stripped.stp                      ;
 ; matrix_top_XY.bsf                                     ;
 ; matrix_top_XY.qip                                     ;
 ; matrix_top_XY.v                                       ;
 ; matrix_top_XY_bb.v                                    ;
 ; output_files/Chain1.cdf                               ;
 ; output_files/stp_collision.stp                        ;
+; output_files/stp_monkey1.stp                          ;
 ; output_files/stp_random.stp                           ;
 +-------------------------------------------------------+
 
